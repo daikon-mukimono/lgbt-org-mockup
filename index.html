@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LGBT Support Org</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+    <div class="flag">
+      <div class="flag-pane red">
+        <h1 class="title">About</h1>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Semper feugiat nibh sed pulvinar proin gravida. Turpis egestas sed tempus urna et pharetra pharetra. Varius sit amet mattis vulputate. Tellus molestie nunc non blandit massa enim nec dui nunc. Tincidunt ornare massa eget egestas purus viverra accumsan. Donec ultrices tincidunt arcu non sodales neque sodales. Nulla facilisi cras fermentum odio. Imperdiet nulla malesuada pellentesque elit eget gravida cum. </p>
+      </div>
+      <div class="flag-pane orange">
+        <h1 class="title">Events</h1>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam sit amet nisl purus in. See:</p>
+          <ul>
+            <li><a href="#">cursus vitae</a></li>
+            <li><a href="#">posuere ac</a></li>
+            <li><a href="#">adipiscing tristique</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flag-pane yellow">
+        <h1 class="title">Health</h1>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Ligula ullamcorper malesuada proin libero nunc consequat <a href="#">interdum varius</a>.</p>
+      </div>
+      <div class="flag-pane green">
+        <h1 class="title">Volunteer</h1>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam etiam erat velit scelerisque in dictum. Non diam phasellus vestibulum lorem sed risus ultricies. Eu sem integer vitae justo eget magna fermentum.</p>
+          <ul>
+            <li><a href="#">consectetur a erat</a></li>
+            <li><a href="#">aliquam</a></li>
+            <li><a href="#">aenean sed adipiscing diam</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flag-pane blue">
+        <h1 class="title">LGBT Seniors</h1>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">Etiam sit amet nisl purus in</a>.</p>
+        </div>
+      </div>
+      <div class="flag-pane purple">
+        <h1 class="title">Friends and Family</h1>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Id porta nibh venenatis cras. Convallis aenean et tortor at risus viverra adipiscing at in. Faucibus a pellentesque sit amet porttitor eget dolor morbi. Lectus mauris ultrices eros <a href="#">in cursus</a>.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+
+  <script>
+
+    const panes = document.querySelectorAll('.flag-pane');
+
+      function toggleOpen(){
+        this.classList.toggle('flag-pane-active');
+      }
+
+      function toggleActive(e){
+        if(e.propertyName.includes('flex')){
+          this.classList.toggle('.flag-pane-active');
+          this.classList.toggle('text-active');
+        }
+
+      }
+
+// do not add () at the end of toggleOpen because then it runs on page load
+      panes.forEach(pane => pane.addEventListener('click', toggleOpen));
+      panes.forEach(pane => pane.addEventListener('transitionend', toggleActive));
+  </script>
+
+</html>

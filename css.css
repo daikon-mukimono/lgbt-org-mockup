@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  bakcground-color: gray;
+}
+
+.flag {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.flag-pane{
+  flex: 1;
+  text-align: center;
+  font-size: 28px;
+  background-position: center;
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  /* flex flag pane is a flex container so that
+  the text can hide */
+  flex-direction: column;
+  transition: transform 0.5s;
+  margin: 0px;
+}
+
+h1{
+  font-size: 36px;
+}
+
+.title{
+  font-family: 'Inconsolata', monospace;
+}
+
+.red{
+  background-color: #E70000;
+}
+
+.orange{
+  background-color: #FF8C00;
+}
+
+.yellow{
+  background-color: #FFEF00;
+}
+
+.green{
+  background-color: #00811F;
+}
+
+.blue{
+  background-color: #0044FF;
+}
+
+.purple{
+  background-color: #760089;
+}
+
+.text{
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.text{
+  transform: translateY(300%);
+}
+
+.text-active{
+  tranform: translateY(-80%);
+}
+
+.flag-pane-active{
+  opacity: 0.65;
+  flex: 11;
+}
+
+ul{
+  list-style: none;
+  text-align: left;
+}
