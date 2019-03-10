@@ -63,17 +63,21 @@ h1{
   margin: 5px;
 }
 
-.text{
+.flag-pane > .text{
   transform: translateY(300%);
 }
 
-.text-active{
-  tranform: translateY(-80%);
+.flag-pane-active > *{
+  flex: auto;
+}
+
+.flag-pane-active .text{
+  tranform: translateY(5%);
 }
 
 .flag-pane-active{
-  opacity: 0.65;
-  flex: 11;
+  opacity: 0.75;
+  flex: 7;
 }
 
 ul{

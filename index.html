@@ -60,13 +60,13 @@
     const panes = document.querySelectorAll('.flag-pane');
 
       function toggleOpen(){
+        this.classList.toggle('flag-pane');
         this.classList.toggle('flag-pane-active');
       }
 
       function toggleActive(e){
         if(e.propertyName.includes('flex')){
           this.classList.toggle('.flag-pane-active');
-          this.classList.toggle('text-active');
         }
 
       }
